@@ -21,6 +21,10 @@ jobs:
           repository: shreya0522/spring3hibernate
           ref: main
 
+    - name: list 
+      run: ls -la
+
+
 # Or specify the branch or tag you want to clone
         #  token: ${{ secrets.ACCESS_TOKEN }} # Optional, if the repository is private 
 
