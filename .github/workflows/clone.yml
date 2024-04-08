@@ -1,4 +1,4 @@
-name: first workflow
+name: second workflow
 
 on:
   push:
@@ -9,23 +9,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Install tree
-        run: sudo apt-get install tree -y 
-
-     - name: check version 
-       run: tree --version
-
-     - name: Checkout Different Repository
+      - name: Checkout Different Repository
         uses: actions/checkout@v2
         with:
           repository: shreya0522/spring3hibernate
           ref: main
 
-    - name: list 
-      run: ls -la
-
-
-# Or specify the branch or tag you want to clone
-        #  token: ${{ secrets.ACCESS_TOKEN }} # Optional, if the repository is private 
-
-
+      - name: list 
+        run: ls -la
