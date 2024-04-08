@@ -1,0 +1,13 @@
+name: first workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install tree
+        run: sudo apt-get install tree -y
